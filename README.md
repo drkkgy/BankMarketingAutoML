@@ -2,23 +2,27 @@
 
 
 # BankMarketingAutoML
+## Table of Content
+* [Overview](##overview)
+* [Architectural Diagram](#architectural-diagram)
+* [Key Steps](#key-steps)
+* [Screen Recording](#screen-recording)
+* [Future Improvements](#screen-recording)
+* [Standout Suggestions](#standout-suggestions)
 
-*TODO:* Write an overview to your project.
-
-## Overview 
+## Overview ##
 
 This Projet involves analysing the Bank Marketing Dataset. Here we are trying to use this data to perform classification and predict whether a Term Deposit will be opened or not by the potential customer.
 We are leveraging the Azure AutoML service to automatically generate the best fitting model for our application and deploying this model as an endpoint to perform prediction. We also create an Azure Pipline
 for training this model as required to ensure its accuracy.
   
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
 
 ### Architectural Diagram
 ![Architectural Diagram](./Architecture_Diagram.PNG?raw=true "Architectural Diagram")
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
+
 ### Step-1 Automated ML Experiment :-
 We create a Data Set for the given BankMarketing dataset url. Then we feed this data into AutoML Service to automaticall fit and create a model capable of classifying and prediction whether a Term Deposit will be opened or not by the potential customer.
 
@@ -84,11 +88,16 @@ Here we finally deploy the azure pipeline to train the model and expose it to an
 
 ![Running_Pipeline](./Running_Pipeline.PNG?raw=true "Running_Pipeline")
 
-## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-## Link to Screen Cast
-Link:- https://youtu.be/ykBXimy5J2Y
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+## Screen Recording ##
 
-## N/A
+### Link to Screen Cast
+[Click Here](https://youtu.be/ykBXimy5J2Y)
+
+## Future Improvements 
+  * We can increase the Exit Criterion from 1 hour to 3  hours(Default ) or even more to find 
+  even more accurate models.
+  * We can collect more data which can enable the model to be more accurate and current. 
+  * We can also enable Data drift tracking to ensure accuracy of the model.
+
+## Standout Suggestions
+  * Implemented the Benchmarking Scripts to benchmark the endpoint
